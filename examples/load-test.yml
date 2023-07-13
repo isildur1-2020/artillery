@@ -1,0 +1,18 @@
+config:
+  target: "https://termoformadosjg.com"
+  tls:
+    rejectUnauthorized: false
+  phases:
+    # - duration: 60
+    #   arrivalRate: 5
+    #   rampTo: 10
+    # - duration: 60
+    #   arrivalRate: 10
+    #   rampTo: 50
+    - duration: 30000
+      rampTo: 50000
+scenarios:
+  - name: Get all employees
+    flow:
+      - get:
+          url: "/src/docs/index2.png"
